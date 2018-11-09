@@ -1,0 +1,22 @@
+name: snack-multiple-test
+
+library:
+    # NOTE: Inherits the package's name.
+    source-dirs: lib1
+    dependencies:
+    - conduit
+
+library:
+    name: lib2
+    source-dirs: lib2
+    dependencies:
+    - conduit
+    - snack-multiple-test
+
+executable:
+    main: Foo.hs
+    source-dirs: app
+    dependencies:
+    - conduit
+    - snack-multiple-test
+    - lib2

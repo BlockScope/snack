@@ -1,0 +1,11 @@
+name: snack-multiple-test
+
+dependencies:
+    - conduit
+
+executable:
+    main: Foo.hs
+    source-dirs:
+    - app
+    - lib1
+    - lib2
